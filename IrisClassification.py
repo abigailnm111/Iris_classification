@@ -21,3 +21,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
+
+#load dataset
+url='iris.csv'
+names= ['sepal-length', 'sepal-width', 'petal-length','petal-width','class']
+dataset=read_csv(url, names=names)
+print(dataset.shape)
